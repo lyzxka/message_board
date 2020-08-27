@@ -1,5 +1,11 @@
 <!--index.wxml-->
 <view class="container">
+  <view class="title">留言板</view>
+  <view class="separate"></view>
+  <view class="message_title">
+    <view class="">精选留言</view>
+    <view class="leave_message">写留言</view>
+  </view>
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>

@@ -19,3 +19,22 @@
 .usermotto {
   margin-top: 200px;
 }
+.title{
+  text-align: left;
+  margin-left: 30rpx;
+}
+.separate{
+  height: 15rpx;
+  background-color: rgba(100,100,100,0.1);
+  margin: 20rpx 0;
+}
+.message_title{
+  font-size: 30rpx;
+  margin-left: 30rpx;
+  color: rgba(100,100,100,0.5);
+}
+.leave_message{
+  display: inline;
+  color: blue;
+  font-weight: 700;
+}
