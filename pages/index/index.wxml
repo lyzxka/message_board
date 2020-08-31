@@ -3,17 +3,48 @@
   <view class="title">留言板</view>
   <view class="separate"></view>
   <view class="message_title">
-    <view class="">精选留言</view>
-    <view class="leave_message">写留言</view>
+    <view class="message_font">精选留言</view>
+    <button class="leave_message" open-type="getUserInfo" bindgetuserinfo="getUserInfo">写留言</button>
+  </view>
+  <view class="list">
+    <view class="list_item">
+        <image bindtap="bindViewTap" class="user_icon" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <view class="message_box">
+          <view class="message_header"> 
+            <view class="message_title">
+              <view class="user_name">{{userInfo.nickName}}</view>
+              <view class="is_top">置顶</view>
+            </view>
+            <view class="message_great">
+              <image class="great_img" src="/assert/img/great0.gif"></image>
+              <view class="great_count">1</view>
+            </view>
+          </view>
+          <view class="message_content">skjdflskdhfkhsdkfjhsdkjhfisduhfsdjifjsdofjsdojfodsjfoisdjfojsdofjsdljfasdasdaslsdmfoisejofiujdsoiufosdjflsdjflkjsdofijsdoifjosdiufoisdufoiusdofjlj</view>
+        </view>
+    </view>
+    <view class="list_item">
+        <image bindtap="bindViewTap" class="user_icon" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <view class="message_box">
+          <view class="message_header"> 
+            <view class="message_title">
+              <view class="user_name">{{userInfo.nickName}}</view>
+              <view class="is_top">置顶</view>
+            </view>
+            <view class="message_great">
+              <image class="great_img" src="/assert/img/great0.gif"></image>
+              <view class="great_count">1</view>
+            </view>
+          </view>
+          <view class="message_content">姜华珍大傻逼;姜华珍大傻逼姜华珍大傻逼姜华珍大傻逼姜华珍大傻逼姜华珍大傻逼,姜华珍大傻逼姜华珍大傻逼姜华珍大傻逼姜华珍大傻逼.姜华珍大傻逼姜华珍大傻逼姜华珍大傻逼姜华珍大傻逼姜华珍大傻逼姜华珍大傻逼姜华珍大傻逼姜华珍大傻逼姜华珍大傻逼</view>
+        </view>
+    </view>
   </view>
   <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+    </block> -->
   </view>
 </view>

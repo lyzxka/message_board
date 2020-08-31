@@ -32,9 +32,74 @@
   font-size: 30rpx;
   margin-left: 30rpx;
   color: rgba(100,100,100,0.5);
+  display: flex;
+}
+.message_font{
+  width: 75%;
+  margin-left: 20rpx;
 }
 .leave_message{
-  display: inline;
-  color: blue;
+  color: darkblue;
   font-weight: 700;
+  padding-right: 20rpx;
+  text-align: right;
+  width: 25%;
+  font-size: 30rpx;
+  background-color: white;
+  height: 60rpx;
+  vertical-align: top;
+  margin: -20rpx 0;
+}
+.list_item{
+  display: flex;
+  margin-top: 20rpx;
+  font-size: 30rpx;
+}
+.user_icon{
+  width: 90rpx;
+  height: 90rpx;
+  margin: 0 20rpx;
+  border-radius: 50%;
+  /* width: 20%; */
+}
+.message_box{
+  width: 80%;
+}
+.message_title{
+  display: flex;
+  margin-left: 0;
+}
+.user_name{
+  color: #aaa;
+}
+.is_top{
+  width: 80rpx;
+  margin-left: 10rpx;
+  text-align: center;
+  background-color: rgba(100,100,100,0.3);
+  color: white;
+}
+.message_header{
+  display: flex;
+  justify-content: space-between;
+}
+.message_great{
+  display: flex;
+}
+.great_img{
+  width: 40rpx;
+  height: 40rpx;
+}
+.great_count{
+  min-width: 30rpx;
+  text-align: right;
+}
+.message_content{
+  line-height: 45rpx;
+  letter-spacing:4rpx;
+  margin-top: 10rpx;
+  margin-right: 10rpx;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:3;
 }
