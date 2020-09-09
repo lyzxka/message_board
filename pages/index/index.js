@@ -7,7 +7,9 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    floatVisible: true,
+    message:"",
   },
   //事件处理函数
   bindViewTap: function() {
@@ -48,7 +50,45 @@ Page({
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,
-      hasUserInfo: true
+      hasUserInfo: true,
+    })
+    this.showFloat();
+  },
+  hideFloat:function(){
+    console.log("222222222")
+    this.setData({
+      floatVisible: false,
+    })
+  },
+  showFloat:function(){
+    console.log("1111111")
+    this.setData({
+      floatVisible:true,
+    })
+  },
+  cancel:function(){
+    this.hideFloat();
+    this.setData({
+      message:"",
+    })
+  },
+  submit:function(){
+    wx.request({
+      url:"",
+      method:"POST",
+      data:{
+        message:""
+      },
+      success:res=>{
+
+      },
+      fail:function(){
+          wx.showToast({
+            title: '"请求失败"',
+            icon: "error",
+            duration:2000
+          })
+      }
     })
   }
 })

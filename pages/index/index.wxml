@@ -47,4 +47,17 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block> -->
   </view>
+  <!-- 留言浮层 -->
+  <view class="floating_layer" wx:if="{{floatVisible}}" bindtap="hideFloat">
+    <view class="layer_container" catchtap>
+      <view class="layer_header">
+        <view bindtap="cancel" bindtap="cancel">X</view>
+        <view style="flex:1;font-weight:600;">写留言</view>
+        <vew class="submit" bindtap="submit">提交</vew>
+      </view>
+      <view class="layer_body">
+        <textarea placeholder="留言被作者精选后，将对所有人可见" ></textarea>
+      </view>
+    </view>
+  </view>
 </view>
